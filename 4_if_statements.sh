@@ -29,3 +29,15 @@ var1=10
 echo $((var2 = var1 < 20 ? 1 : 0))
 
 
+
+# The OR || AND && operator
+var=10
+if [ "$var" -gt 0 ] || ["$var" -eq 10 ]
+then    
+	echo "One or both are true"
+else    
+	echo "Neither on of the condition is true"
+fi
+
+
+

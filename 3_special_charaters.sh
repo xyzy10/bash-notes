@@ -57,3 +57,31 @@ cat cat.txt
 
 # 7 clean it up
 rm cat.txt
+
+
+
+# use cat and {} to output mutiple file content to a single file
+cat {file1.sh,file2.sh} > new_script.sh
+
+
+# output prefix and subfix for collection of items
+# $abc$ $123$ $erf$
+echo \${abc,123,erf}\$
+
+
+# Section 4:
+# the - sign
+# go to previews directory 
+cd ~-
+
+
+
+# Section 5:
+# the ^ sign and , sign
+# ^ sign use for uppercase convertion
+# , sign use for lowercsae convertion
+# ^^ convert all to uppercase, single ^ convert the first character to upercase
+y="hello world"
+echo ${y^^}
+
+
