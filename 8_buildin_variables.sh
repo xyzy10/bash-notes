@@ -84,6 +84,32 @@ fi
 echo "$MACHTYPE"
 
 
+# var: $PWD
+# store the current directory
 
 
+# var: $OLDPWD
+# store the preview directory
 
+
+# var: $REPLY
+# store the input for last read command
+echo "How's your day?"
+read
+echo "you said $REPLY"
+
+
+# var: $SECONDS
+# The number of seconds the current script has been running
+LIMIT_TIME=18
+TIME_INTERVAL=3
+
+
+echo "This script will run for $LIMIT_TIME seconds."
+echo "Press Ctrl-c to exit before the time limit."
+
+while [ "$SECONDS" -le "$LIMIT_TIME" ]
+do
+	echo "This script has been running for $SECONDS seconds"
+	sleep $TIME_INTERVAL
+done    
