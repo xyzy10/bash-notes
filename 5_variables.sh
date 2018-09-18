@@ -111,3 +111,18 @@ let "var+=1"
 echo "$var"
 
 
+# Section 11:
+# declare
+# declare command used to declare shell variable and functions
+
+
+# -r read only variable
+declare -r VAR_R=5
+echo "$VAR_R"
+VAR_R=7
+echo "$VAR_R"
+
+# string will be convert to 0 
+declare -i VAR_I=10
+VAR_I=blue
+echo "$VAR_I"

@@ -12,7 +12,7 @@ done
 Colors=(red white brown purple)
 
 # find array key with "${!Colors[@]}"
-for i in "${!Colors[@]}"
+for i in "${Colors[@]}"
 do      
-       	echo ${Colors[$i]}
+       	echo $i
 done    
